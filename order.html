@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="CSS/orderStyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 style="font-family: cursive;font-size: 48px;">SUNSHINE CAFE</h1>
+            <p>Order your favorite items!</p>
+        </div>
+    </header>
+
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="order-container">
+        <h2>Place Your Order</h2>
+        <div class="user-input">
+            <div>
+                <label for="user-name">Name:</label>
+                <input type="text" id="user-name" placeholder="Enter your full name">
+            </div>
+            <div>
+                <label for="mobile-number">Mobile Number:</label>
+                <input type="tel" id="mobile-number" placeholder="Enter your mobile number">
+            </div>
+            <div>
+                <label for="user-location">Enter your location:</label>
+                <input type="text" id="user-location" placeholder="City/Street/Address">
+            </div>
+        </div>
+        <div id="order-items">
+            <div class="order-item">
+                <!-- Main Category -->
+                <select class="main-category" onchange="updateSubCategory(this)">
+                    <option value="">-- Select Category --</option>
+                    <option value="Coffee">Coffee</option>
+                    <option value="Tea">Tea</option>
+                    <option value="Sandwich">Sandwich</option>
+                    <option value="Burger">Burger</option>
+                    <option value="Waffle">Waffle</option>
+                </select>
+                <!-- Sub Category -->
+                <select class="sub-category" onchange="updatePrice(this)">
+                    <option value="">-- Select Option --</option>
+                </select>
+                <!-- Quantity -->
+                <input type="number" class="item-quantity" min="1" placeholder="Count" value="1"
+                    onchange="updatePrice(this)">
+                <!-- Price Display -->
+                <span class="item-price">Rs.0</span>
+                <button class="remove-item" onclick="removeItem(this)">Remove</button>
+            </div>
+        </div>
+        <br>
+        <div class="button-container">
+            <button onclick="addItem()">Add More Items</button>
+            <button onclick="executeOrder()">Execute Order</button>
+        </div>
+        <div class="amount">
+            <h3>Total Amount: Rs. <span id="total-amount">0</span></h3>
+        </div>
+
+        <!-- Payment Section -->
+        <div id="payment-section" style="display: none;">
+            <h3>Choose Payment Method:</h3>
+            <select id="payment-method" onchange="showPaymentDetails()">
+                <option value="">-- Select Payment Method --</option>
+                <option value="Net Banking">Net Banking</option>
+                <option value="UPI">UPI</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+            <div id="payment-details"></div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 SUNSHINE CAFE | Happy Ordering!
+    </footer>
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>

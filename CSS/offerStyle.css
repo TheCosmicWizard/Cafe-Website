@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    border: 0;
+}
+
+header {
+    background: #FFFFFF;
+    color: #5e2217;
+}
+
+header .container {
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+    background: url("../Img/bg.jpg") no-repeat fixed center/cover;
+    
+}
+
+.container h1 {
+    margin: 0px;
+    padding: 10px;
+    background-image: url(/Img/bg.jpg);
+    background-size: 295px ;
+    color: #ffbb00;
+}
+
+nav {
+    font-style: italic;
+    font-size: 20px;
+    background: #333;
+    color: #c2b8ac;
+    padding: 12px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 40px;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 35px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.capsule {
+    display: block;
+    background-color: #FBD041;
+}
+
+.capsule h2 {
+    margin: 0;
+    padding: 0.25rem;
+    padding-left: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    color: #ff2727;
+}
+
+.prom {
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+}
+
+.pic {
+    position: relative;
+    width: 30%;
+    height: 92%;
+}
+
+.prom img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid peachpuff;
+    border-radius: 18px;
+    transition: all ease-in-out 0.6s;
+}
+
+.text1,
+.text2,
+.text3,
+.info{
+    position: absolute;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.text1,
+.text2,
+.text3 {
+    top: 10px;
+    left: 10px;
+    color: #FFFFFF;
+    background-color: red;
+    display: none;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.info {
+    width: 35%;
+    height: 100%;
+    top: 5px;
+    right: 2.5px;
+    color: #2B5CFB;
+    display: block;
+    text-align: right;
+    animation: movedata 2.5s;
+}
+@keyframes movedata {
+  from {right: -20px;}
+  to {right: 2.5px;}
+}
+
+.pic:hover .text1,
+.pic:hover .text2,
+.pic:hover .text3 {
+    display: block;
+}
+
+.capsule img:hover {
+    width: 100%;
+}
+
+.pic:hover .info{
+    display: none;
+}
+footer {
+    background-color: #FBD041 ;
+    color: #6a4c93;
+    text-align: center;
+    font-size: 27px;
+    padding: .75rem;
+}
