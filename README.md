@@ -3,7 +3,7 @@
 Discover the perfect blend of **simplicity and functionality** with our café website.  
 Browse the menu, customize your order, and enjoy a seamless checkout experience.  
 
-👉 **Live Demo:** [Cafe Website]([https://7ljcl7.csb.app/](https://thecosmicwizard.github.io/Cafe-Website/))
+👉 **Live Demo:** [Cafe Website]([https://thecosmicwizard.github.io/Cafe-Website/])
 
 ---
 
