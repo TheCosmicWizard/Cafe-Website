@@ -24,4 +24,19 @@ flowchart TD
     E --> F[Checkout]
     F --> G[Order Confirmation]
 ```
+---
 
+# 🚀 Features
+ - Clean & responsive UI
+ - Menu browsing with item details
+ - Order customization
+ - Cart & checkout flow
+---
+## 📌 How to Run
+```bash
+# Clone repo
+git clone https://github.com/TheCosmicWizard/Cafe-Website.git
+cd Cafe-Website
+
+# Open index.html in browser
+```
