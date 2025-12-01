@@ -5,7 +5,7 @@ Browse the menu, customize your order, and enjoy a seamless checkout experience.
 
 👉 **Live Demo:** [Cafe Website](https://thecosmicwizard.github.io/Cafe-Website/)
 
------
+---
 
 ## 🛠️ Tech Used
 - **HTML5** – structure  
